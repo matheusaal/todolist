@@ -12,9 +12,10 @@ class Interface():
 
     def menu(self):
 
-        print("\tOption 1: Create a new task")
-        print("\tOption 2: View your tasks")
-        print("\tOption 3: Change a task status")
-        print("\tOption 4: Delete a task")
-        print("\tOption 5: Generate a txt file")
-        print("\tOption 6: Exit\n")
+        print("Option 1: Create a new task")
+        print("Option 2: View your tasks")
+        print("Option 3: Change a task status")
+        print("Option 4: Delete a task")
+        print("Option 5: Generate a txt file")
+        print("Option 6: Exit\n")
+        

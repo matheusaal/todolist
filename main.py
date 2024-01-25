@@ -7,19 +7,19 @@ def main():
 
     layout.logo()
 
-    layout.menu()
-
     userToDoList = ToDoList()
 
     userOption = -1
         
     while (userOption != "6"):
 
+        layout.menu()
         userOption = input("Enter your option: ")
+        print()
 
         if (userOption == "1"):
 
-            userTask = input("\nAdd the task: ")
+            userTask = input("Add the task: ")
             userToDoList.addTask(userTask)
 
         if (userOption == "2"):
@@ -32,14 +32,16 @@ def main():
             userToDoList.updateTaskStatus(taskToBeUpdated)
 
         if (userOption == "4"):
-            
-            userToDoList.removeTask()
+
+            taskToBeRemoved = input("Choose the task: ")
+            userToDoList.removeTask(taskToBeRemoved)
 
         if (userOption == "5"):
 
-            pass
+            fileToBeGenerated = input("Choose the file name: ")
+            userToDoList.generateFile(fileToBeGenerated)
 
-    print("Thanks for using our program.")
+    print("Thanks for using our program.\n")
 
 if __name__ == "__main__":
 
